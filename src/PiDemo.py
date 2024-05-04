@@ -47,6 +47,7 @@ def test_motor():
 
     sleep(2)
 
+    dc_motor.set_motor_speed(0)
 
 def main():
     # Instantiate and initialize the LCD driver
@@ -70,7 +71,7 @@ def main():
 
     # Buzzer beep
     buzzer.init()
-    buzzer.short_beep(0.1)
+    buzzer.beep(0.5, 0.5, 4)
 
     blink_led(1)
 
